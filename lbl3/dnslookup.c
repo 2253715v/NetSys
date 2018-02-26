@@ -4,10 +4,9 @@
 
 #include <netdb.h>
 
-#include <errno.h>
-
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 
 #define BUFLEN 1500
 
@@ -15,7 +14,7 @@ int main(int argc, char *argv[])
 {
     struct addrinfo hints, *ai, *ai0;
 
-    int i, fd;
+    int i;
     char buf[BUFLEN];
     void *crrAdd;
 

@@ -66,10 +66,8 @@ int main(int argc, char *argv[])
             
         }
         //FREE THE VARS
-        freeaddrinfo(ai0);
-        
+        freeaddrinfo(ai0);        
+        freeaddrinfo(ai);
+        //freeaddrinfo(crrAdd);
     }
-    free(ai);
-    free(ai0);
-    free(crrAdd);
 }

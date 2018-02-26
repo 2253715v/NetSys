@@ -34,10 +34,10 @@ main(void)
   addr.sin_port        = htons(5000);
   addr.sin_addr.s_addr = INADDR_ANY;
 
-  if (bind(fd, (struct sockaddr *) &addr, sizeof(addr)) == -1) {
-    perror("Unable to bind to port");
-    return 1;
-  }
+    if (bind(fd, (struct sockaddr *) &addr, sizeof(addr)) == -1) {
+      perror("Unable to bind to port");
+      return 1;
+    }
 
   // Listen for a connection
   if (listen(fd, 1) == -1) {

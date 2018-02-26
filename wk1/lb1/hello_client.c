@@ -15,8 +15,7 @@
 
 #define BUFLEN 1500
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
   int                      i; 
   ssize_t                  wlen;

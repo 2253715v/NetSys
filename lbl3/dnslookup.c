@@ -38,10 +38,10 @@ int main(int argc, char *argv[])
             printf("Unable to look up IP address: %s", gai_strerror(i));
             continue;
         }
-        int ipFam =-1;
-        
 
+              
         //printing the IP strings
+        int ipFam =-1;  
         for (ai = ai0; ai != NULL; ai = ai->ai_next)
         {
             //Check if IPv4/v6
